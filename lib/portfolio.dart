@@ -8,6 +8,7 @@ import 'package:app/pie.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:app/services/http_service.dart';
 import 'package:http/http.dart';
+import 'dart:async';
 // import 'dart:convert';
 
 class Portfolio extends StatefulWidget {
@@ -105,6 +106,8 @@ class _PortfolioState extends State<Portfolio> {
               _isMinus = false;
             }
 
+            Timer timer;
+
             return Column(
               children: [
                 Container(
@@ -121,6 +124,7 @@ class _PortfolioState extends State<Portfolio> {
                           String url =
                               "https://1jyqqpwi3m.execute-api.ap-southeast-1.amazonaws.com/api/prices";
                           get(Uri.parse(url));
+                          timer = Timer.periodic(Duration(seconds: 15), (Timer t) => get(Uri.parse(url)));
 
                           // print("About to sleep");
                           sleep(Duration(seconds: 1));
