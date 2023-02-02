@@ -33,7 +33,8 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: beigeColor,
+        // primarySwatch: beigeColor,
+        primarySwatch: MaterialColor(0xFF000000, color),
       ),
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(
