@@ -71,7 +71,8 @@ class MyApp extends StatelessWidget {
             children: [
               // PostPage(),
               Portfolio(),
-              Charting(),
+              // Charting(),
+              Icon(Icons.directions_transit),
               Icon(Icons.directions_transit),
               Icon(Icons.ac_unit)
             ],
