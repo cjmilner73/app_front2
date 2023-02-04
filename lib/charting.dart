@@ -28,7 +28,7 @@ class _ChartingState extends State<Charting> {
     int counter = 0;
 
     return FutureBuilder(
-        future: httpService.getOHCL(),
+        future: httpService.getPosts(),
         builder: (BuildContext context, AsyncSnapshot<List<Post>> snapshot) {
           if (snapshot.hasData) {
             List<Post> posts = snapshot.data as List<Post>;

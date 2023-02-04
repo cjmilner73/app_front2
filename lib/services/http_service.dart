@@ -88,11 +88,12 @@ class HttpService {
     }
   }
   }
-  Future<List<Post>> getOHCL() async {
+  Future<List<Post>> igetOHCL() async {
     String postsUrl = formURL();
     Response res = await get(Uri.parse(postsUrl));
     if (res.statusCode == 200) {
       var lists = json.decode(res.body);
+      print(lists);
       List<Post> list = [];
       Post p = Post(id: '', price: 0.0, amount: 0, total: 0, day_change: 0.0);
       print(list.length);
