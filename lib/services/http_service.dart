@@ -88,7 +88,7 @@ class HttpService {
     }
   }
   }
-  Future<List<Post>> igetOHCL() async {
+  Future<List<Post>> getOHCL() async {
     String postsUrl = formURL();
     Response res = await get(Uri.parse(postsUrl));
     if (res.statusCode == 200) {
