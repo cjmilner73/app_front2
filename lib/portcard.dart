@@ -76,7 +76,8 @@ class PortCard extends StatelessWidget {
 
     return Container(
       // decoration: new BoxDecoration(color: Color(0xFF040507)),
-      decoration: new BoxDecoration(color: Color(0xFFFFFBE6)),
+      // decoration: new BoxDecoration(color: Color(0xFFFFFBE6)),
+      decoration: new BoxDecoration(color: Color(0xFF000000)),
       padding: EdgeInsets.all(10),
       child: Column(
         children: [

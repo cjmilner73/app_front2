@@ -109,7 +109,8 @@ class _PortfolioState extends State<Portfolio> {
             return Column(
               children: [
                 Container(
-                  color: Color(0xFFFFFBE6),
+                  // color: Color(0xFFFFFBE6),
+                  color: Color(0xFF000000),
                   padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -180,7 +181,8 @@ class _PortfolioState extends State<Portfolio> {
                     )),
                 Expanded(
                   child: Container(
-                    decoration: new BoxDecoration(color: Color(0xFFFFFBE6)),
+                    // decoration: new BoxDecoration(color: Color(0xFFFFFBE6)),
+                    decoration: new BoxDecoration(color: Color(0xFF000000)),
                     child: ListView(
                       children: posts.map((Post post) {
                         // String code =
