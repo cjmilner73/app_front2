@@ -17,7 +17,7 @@ class HttpService {
     // String postsUrl =
     //     "https://1jyqqpwi3m.execute-api.ap-southeast-1.amazonaws.com/api/holdings";
     String postsUrl = "http://127.0.0.1:5000/holdings";
-    // postsUrl = "http://192.168.1.70:5000/holdings";
+    postsUrl = "http://192.168.1.70:5000/holdings";
     // postsUrl = "http://54.251.184.17:5000/holdings";
     
     return postsUrl;
