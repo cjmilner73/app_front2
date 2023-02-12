@@ -30,6 +30,7 @@ class HttpService {
     // if (postsUrl == "http://127.0.0.1:5000/holdings") {
     if (postsUrl == "http://54.251.184.17:5000/holdings") {
     if (res.statusCode == 200) {
+      print("Found status 200");
       var hashMap = json.decode(res.body);
       Map<String, dynamic> m = Map<String, dynamic>.from(hashMap);
       var lists = m["holdings"];
