@@ -27,8 +27,8 @@ class HttpService {
     String postsUrl = formURL();
     Response res = await get(Uri.parse(postsUrl));
     // Check if running local server
-    // if (postsUrl == "http://127.0.0.1:5000/holdings") {
-    if (postsUrl == "http://54.251.184.17:5000/holdings") {
+    if (postsUrl == "http://127.0.0.1:5000/holdings") {
+    // if (postsUrl == "http://54.251.184.17:5000/holdings") {
     if (res.statusCode == 200) {
       print("Found status 200");
       var hashMap = json.decode(res.body);
@@ -68,6 +68,7 @@ class HttpService {
       var lists = json.decode(res.body);
       List<Post> list = [];
       Post p = Post(id: '', price: 0.0, amount: 0, total: 0, day_change: 0.0);
+      print(list);
       for (var i = 0; i < lists.length; i++) {
         String thisId = lists[i][1];
         double thisPrice = lists[i][3];
