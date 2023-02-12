@@ -181,8 +181,8 @@ class _PortfolioState extends State<Portfolio> {
                     )),
                 Expanded(
                   child: Container(
-                    // decoration: new BoxDecoration(color: Color(0xFFFFFBE6)),
-                    decoration: new BoxDecoration(color: Color(0xFF000000)),
+                    decoration: new BoxDecoration(color: Color(0xFFFFFBE6)),
+                    // decoration: new BoxDecoration(color: Color(0xFF000000)),
                     child: ListView(
                       children: posts.map((Post post) {
                         // String code =
